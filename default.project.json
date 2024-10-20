@@ -1,0 +1,32 @@
+{
+  "name": "Template Roblox Project",
+  "emitLegacyScripts": false,
+  "tree": {
+    "$className": "DataModel",
+
+    "ReplicatedStorage": {
+      "$path": "src/Shared",
+      "Packages": {
+        "$path": "Packages"
+      },
+      "Client": {
+        "$path": "src/Client"
+      },
+      "Animations": {
+        "$className": "Folder"
+      },
+      "Effects": {
+        "$className": "Folder"
+      },
+      "Remotes": {
+        "$className": "Folder"
+      },
+      "Sounds": {
+        "$className": "Folder"
+      }
+    },
+    "ServerScriptService": {
+      "$path": "src/Server"
+    }
+  }
+}

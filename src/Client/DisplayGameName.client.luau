@@ -37,29 +37,4 @@ ZoneStory.story({
     }
 })
 
-for _,Zone: BasePart in ZoneStorage:GetChildren() do
-    if not Zone:IsA("BasePart") then continue end
-    local Name = Zone.Name
-    local Description = Zone:GetAttribute("Description") or "N/A"
-
-    Zone.Touched:Connect(function()
-        if Cooldown then return end; Cooldown = true
-
-        local Sound: Sound = Sounds:FindFirstChild(Name)
-        if Sound then
-            Sound:Play()
-        end
-
-        TitleText:set(Name)
-        DescriptionText:set(Description)
-        Enabled:set(true)
-
-        task.delay(POPUP_DURATION, function()
-            Enabled:set(false)
-
-            task.wait(COOLDOWN_DURATION)
-            Cooldown = false
-        end)
-    end)
-    Zone.Parent = Workspace.Zones
-end
+--CONTENT REMOVED FOR PRIVACY
